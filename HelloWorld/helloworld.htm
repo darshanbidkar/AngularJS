@@ -1,0 +1,17 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script type="text/javascript" src="helloworld.js"></script>
+<title>Hello World</title>
+</head>
+
+<body>
+<div ng-app="HelloWorldApp" ng-controller="HelloWorldController">
+	<h2>Hello World</h2>
+	<label for="name">Please enter your name</label>
+	<input id="name" type="text" ng-model="getName" />
+	<br />
+	<input type="submit" value="Say Hello!" ng-click="onHelloClick()" />
+</div>
+</body>
+</html>
