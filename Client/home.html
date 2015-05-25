@@ -3,20 +3,11 @@
         <title>
             GlobalBox
         </title>
-       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
-    <script>
-            var home = angular.module("homeApp", []);
-            home.controller("homeController",
-            function($scope) {
-              $scope.authenticate = function() {
-                $scope.message = 'done';
-              }
-            });
-    </script>
+       <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+        <script src="home.js"></script>
     </head>
     
     <body ng-app="homeApp" ng-controller="homeController">
-Changes by Amey
         <input type = "text" ng-model="message"/>
         <button ng-click="authenticate()">Authenticate</button>
     </body>
